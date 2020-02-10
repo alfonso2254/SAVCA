@@ -5,9 +5,9 @@ $username = 'root';
 $password = "";
 $database = 'SAVCA';
 
-$conexion = mysqli_connect($server,$username,$password,$database);
+$bd = mysqli_connect($server,$username,$password,$database);
 
-if (!$conexion) {
+if ($bd) {
   echo "Conectado correctamente.";
 }
 else {

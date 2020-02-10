@@ -1,5 +1,4 @@
 
-
 <html>
   <head>
     <meta charset="utf-8">
@@ -14,14 +13,16 @@
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="css/bootstrap-reset.css" rel="stylesheet">
 <link href="fonts/css/font-awesome.css" rel="stylesheet" />
-Se cambio prueba por esto 
+
 <link href="css/style.css" rel="stylesheet">
 <link href="css/style-responsive.css" rel="stylesheet" />
 </head>
   <body class="login-body">
 
+   
+
   <!-- Star formulario Login  -->
-    <form class="form-signin"  autocomplete="off" method="POST" id="admin-form">
+    <form class="form-signin" action="controlador/validacion_session.php"  autocomplete="off" method="POST" >
       <!-- Logo -->
       <div align="center" style="height:; vertical-align:middle;">
         <img src="">
@@ -31,8 +32,8 @@ Se cambio prueba por esto
   
         <div class="login-wrap">
           <div class="user-login-info">
-            <input id="Nombre_Usuario" type="text" name="Nombre_Usuario" class="form-control" name placeholder="Usuario">
-            <input id="Clave_Usuario" type="password" name="Clave_Usuario" class="form-control" placeholder="Clave">
+            <input id="Nombre_Usuario" type="text" name="Nombre_Usuario" class="form-control" name placeholder="Usuario" value="jmarquez">
+            <input id="Clave_Usuario" type="password" name="Clave_Usuario" class="form-control" placeholder="Clave" value="jm123456">
           </div>
         </div>
           
