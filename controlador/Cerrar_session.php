@@ -1,9 +1,9 @@
 <?php
 session_start();
-$login = $_SESSION['login']
+$login = $_SESSION['login'];
     
     
-require ('conexion.php')
+require ('conexion.php');
     
 if (isset($_SESSION['login'])) {	
 session_destroy();
