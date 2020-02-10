@@ -35,9 +35,10 @@
             <input id="Nombre_Usuario" type="text" name="Nombre_Usuario" class="form-control" name placeholder="Usuario" value="jmarquez">
             <input id="Clave_Usuario" type="password" name="Clave_Usuario" class="form-control" placeholder="Clave" value="jm123456">
           </div>
+          <button class="btn btn-lg btn-login btn-block"type="submit" >INGRESAR</button>
         </div>
           
-        <button class="btn btn-lg btn-login btn-block"type="submit" >INGRESAR</button>
+        
     </form>
   <!-- end formulario Login  -->
   </body>
