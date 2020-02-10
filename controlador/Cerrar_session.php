@@ -1,11 +1,8 @@
 <?php
-include ('validacion_session.php');
-$usuario = $_SESSION['login'];
-    
-    
-if (isset($_SESSION['login'])) {	
+session_start();
+
 session_destroy();
-header('Location: index.php');  
-}  
+header('location:../index.php');  
+  
 
 ?>
