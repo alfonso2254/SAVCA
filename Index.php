@@ -31,7 +31,7 @@ Se cambio prueba por esto
   
         <div class="login-wrap">
           <div class="user-login-info">
-            <input id="Nombre_Usuario" type="text" name="Nombre_Usuario" class="form-control" name placeholder="Usuario">
+            <input id="Nombre_Usuario" type="text" name="Nombre_Usuario" class="form-control" name placeholder="Marque usuario">
             <input id="Clave_Usuario" type="password" name="Clave_Usuario" class="form-control" placeholder="Clave">
           </div>
         </div>
