@@ -1,6 +1,6 @@
 <?php
-session_start();
-$login = $_SESSION['login'];
+include ('validacion_session.php');
+$usuario = $_SESSION['login'];
     
     
 if (isset($_SESSION['login'])) {	
