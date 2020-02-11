@@ -7,7 +7,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <link rel="icon" href="images/Logo.ico" type="image/x-icon">
+    <link rel="icon" href="imagenes/logo1.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="css/summernote.css">
     <link rel="stylesheet" type="text/css" href="css/admin-forms.min.css">
     <link rel="stylesheet" type="text/css" href="css/css">
