@@ -17,7 +17,7 @@ $_SESSION['id'] = $imprimenombre['id'];
 
 $fila= mysqli_num_rows($resultado);
 if ($fila>0) {
-  header("location:../dashboard.php");
+  header("location:../menu.php");
 }else{
   echo '<script>
     alert("Usted no se encuentra registrado");
