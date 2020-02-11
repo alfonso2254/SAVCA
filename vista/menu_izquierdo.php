@@ -26,7 +26,7 @@
       <li class="p-0 nav-item">
         <a class="p-2 nav-link collapsed" href="#" data-toggle="collapse" data-target="#Productos" aria-expanded="true" aria-controls="collapseTwo">
           <i class="fas fa-fw fa-cog"></i>
-          <span>Productos</span>
+          <span>Inventario</span>
         </a>
         <div id="Productos" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
@@ -128,7 +128,7 @@
       <li class="p-0 nav-item">
         <a class="p-2 nav-link collapsed" href="#" data-toggle="collapse" data-target="#Informe" aria-expanded="true" aria-controls="collapseTwo">
           <i class="fas fa-fw fa-cog"></i>
-          <span>Inforrme</span>
+          <span>Informe</span>
         </a>
         <div id="Informe" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
