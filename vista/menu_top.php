@@ -1,4 +1,4 @@
-<nav style="background:#B71C1C" class="navbar navbar-expand navbar-light topbar fixed-top   shadow">
+<nav style="background:#B71C1C; height: 60px" class="navbar navbar-expand navbar-light topbar fixed-top   shadow">
 
           <!-- Sidebar Toggle (Topbar) -->
           <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
@@ -15,10 +15,10 @@
 
           <!-- Topbar Search -->
           <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-5 my-2 my-md-0 mw-100 navbar-search">
-            <div class="input-group">
-              <input style="color:#FDFEFE; background: #616A6B;  " type="text" class="form-control border-0 small" placeholder="Buscar..." aria-label="Search" aria-describedby="basic-addon2">
+            <div  class="input-group">
+              <input style="color:#FDFEFE; background: #616A6B;height: 35px  " type="text" class="form-control border-0 small" placeholder="Buscar..." aria-label="Search" aria-describedby="basic-addon2">
               <div class="input-group-append">
-                <button class="btn btn-success" type="button">
+                <button style="height: 35px " class="btn btn-success" type="button">
                   <i class="fas fa-search fa-sm"></i>
                 </button>
               </div>

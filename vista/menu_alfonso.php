@@ -37,7 +37,7 @@
     <!-- Final del menu sidebar  -->
 
    <!--Contenido de la pagina inncluyendo el menu top-->
-    <div style="margin-top: 70px"  id="content-wrapper" class="d-flex flex-column bg-secondary text-white">
+    <div style="margin-top: 60px"  id="content-wrapper" class="d-flex flex-column bg-secondary text-white">
 
       <!-- Main Content -->
       <div id="content">
@@ -62,8 +62,8 @@
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Earnings (Monthly)</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">$40,000</div>
+                      <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Ventas Anuales</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800">40,000 Bs</div>
                     </div>
                     <div class="col-auto">
                       <i class="fas fa-calendar fa-2x text-gray-300"></i>
@@ -79,8 +79,8 @@
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Earnings (Annual)</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">$215,000</div>
+                      <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Ventas Mensuales</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800">2.000.000,00 Bs</div>
                     </div>
                     <div class="col-auto">
                       <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
@@ -96,7 +96,7 @@
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Tasks</div>
+                      <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Tareas</div>
                       <div class="row no-gutters align-items-center">
                         <div class="col-auto">
                           <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50%</div>
@@ -122,7 +122,7 @@
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Pending Requests</div>
+                      <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Pedidos</div>
                       <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
                     </div>
                     <div class="col-auto">
@@ -142,7 +142,7 @@
               <div class="card shadow mb-4">
                 <!-- Card Header - Dropdown -->
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                  <h6 class="m-0 font-weight-bold text-primary">Earnings Overview</h6>
+                  <h6 class="m-0 font-weight-bold text-primary">Resumen de Ganancias Anuales</h6>
                   <div class="dropdown no-arrow">
                     <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
@@ -170,7 +170,7 @@
               <div class="card shadow mb-4">
                 <!-- Card Header - Dropdown -->
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                  <h6 class="m-0 font-weight-bold text-primary">Revenue Sources</h6>
+                  <h6 class="m-0 font-weight-bold text-primary">Productos Mas Vendidos</h6>
                   <div class="dropdown no-arrow">
                     <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
@@ -190,14 +190,14 @@
                     <canvas id="myPieChart"></canvas>
                   </div>
                   <div class="mt-4 text-center small">
-                    <span class="mr-2">
-                      <i class="fas fa-circle text-primary"></i> Direct
+                    <span class="mr-2 text-primary">
+                      <i class="fas fa-circle text-primary"></i> Arroz
                     </span>
-                    <span class="mr-2">
-                      <i class="fas fa-circle text-success"></i> Social
+                    <span class="mr-2 text-success">
+                      <i class="fas fa-circle text-success"></i> Pollo
                     </span>
-                    <span class="mr-2">
-                      <i class="fas fa-circle text-info"></i> Referral
+                    <span class="mr-2 text-info">
+                      <i class="fas fa-circle text-info"></i> Leche
                     </span>
                   </div>
                 </div>

@@ -475,14 +475,14 @@
                     <canvas id="myPieChart"></canvas>
                   </div>
                   <div class="mt-4 text-center small">
-                    <span class="mr-2">
-                      <i class="fas fa-circle text-primary"></i> Direct
+                    <span class="mr-2 text-primary">
+                      <i class="fas fa-circle text-primary"></i> Arroz
                     </span>
-                    <span class="mr-2">
-                      <i class="fas fa-circle text-success"></i> Social
+                    <span class="mr-2 text-success">
+                      <i class="fas fa-circle text-success"></i> Pollo
                     </span>
-                    <span class="mr-2">
-                      <i class="fas fa-circle text-info"></i> Referral
+                    <span class="mr-2 text-info">
+                      <i class="fas fa-circle text-info"></i> Cafe
                     </span>
                   </div>
                 </div>
