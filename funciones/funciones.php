@@ -38,7 +38,7 @@ function total_clientes(){
 	require('../controlador/Conexion.php');
 	$sql = "select count(*) from clientes ";
 	//echo $sql;
-	$rs  = mysql_query($sql,$con);
+	$rs  = mysql_query($sql,$bd);
 	@$row = mysql_fetch_array($rs);
 	return utf8_encode($row[0]);
 };
@@ -50,7 +50,7 @@ function total_clientes(){
 function campo_usuarios($login,$campo){
 	require('../controlador/Conexion.php');
 	$sql = "select $campo from usuarios where login = '$login' ";
-	$rs  = mysql_query($sql,$con);
+	$rs  = mysql_query($sql,$bd);
 	@$row = mysql_fetch_array($rs);
 	return utf8_encode($row[0]);
 };
@@ -59,7 +59,7 @@ function campo_usuarios($login,$campo){
 function nombre_cliente($campo){
 	require('../controlador/Conexion.php');
 	$sql = "select nombre from clientes where id = '$campo' ";
-	$rs  = mysql_query($sql,$con);
+	$rs  = mysql_query($sql,$bd);
 	@$row = mysql_fetch_array($rs);
 	return utf8_encode($row[0]);
 };
@@ -67,7 +67,7 @@ function nombre_cliente($campo){
 function campo_cliente($id,$campo){
 	require('../controlador/Conexion.php');
 	$sql = "select $campo from clientes where id = '$id' ";
-	$rs  = mysql_query($sql,$con);
+	$rs  = mysql_query($sql,$bd);
 	@$row = mysql_fetch_array($rs);
 	return utf8_encode($row[0]);
 };
@@ -75,7 +75,7 @@ function campo_cliente($id,$campo){
 function campo_presu($id,$campo){
 	require('../controlador/Conexion.php');
 	$sql = "select $campo from presupuestos where id_presupuesto = '$id' ";
-	$rs  = mysql_query($sql,$con);
+	$rs  = mysql_query($sql,$bd);
 	@$row = mysql_fetch_array($rs);
 	return utf8_encode($row[0]);
 };
@@ -85,7 +85,7 @@ function campo_presu($id,$campo){
 function campo_presu_mod($id,$campo,$item){
 	require('../controlador/Conexion.php');
 	$sql = "select $campo from presupuestos where id_presupuesto = '$id' and id_item = '$item' ";
-	$rs  = mysql_query($sql,$con);
+	$rs  = mysql_query($sql,$bd);
 	@$row = mysql_fetch_array($rs);
 	return utf8_encode($row[0]);
 };
@@ -94,7 +94,7 @@ function campo_presu_mod($id,$campo,$item){
 function cantidad_presupuesto($campo){
 	require('../controlador/Conexion.php');
 	$sql = "select sum(precio_total) from presupuestos where id_presupuesto = '$campo' ";
-	$rs  = mysql_query($sql,$con);
+	$rs  = mysql_query($sql,$bd);
 	@$row = mysql_fetch_array($rs);
 	return ($row[0]);
 };
@@ -103,7 +103,7 @@ function cantidad_presupuesto($campo){
 function cantidad_item($campo){
 	require('../controlador/Conexion.php');
 	$sql = "select count(id_item) from presupuestos where id_presupuesto = '$campo' ";
-	$rs  = mysql_query($sql,$con);
+	$rs  = mysql_query($sql,$bd);
 	@$row = mysql_fetch_array($rs);
 	return ($row[0]);
 };
@@ -113,7 +113,7 @@ function hora($login,$fecha,$campo){
 	require('../controlador/Conexion.php');
 	$sql = "select (hora) from ingresos_usuarios where usuario = '$login' and fecha = '$fecha' and acceso = 'Ingreso' order by id asc limit 1 ";
 	//echo $sql;
-	$rs  = mysql_query($sql,$con);
+	$rs  = mysql_query($sql,$bd);
 	@$row = mysql_fetch_array($rs);
 	return utf8_encode($row[0]);
 };
@@ -122,7 +122,7 @@ function hora_salida($login,$fecha,$campo){
 	require('../controlador/Conexion.php');
 	$sql = "select (hora) from ingresos_usuarios where usuario = '$login' and fecha = '$fecha' and acceso = 'Salida' order by id desc limit 1 ";
 	//echo $sql;
-	$rs  = mysql_query($sql,$con);
+	$rs  = mysql_query($sql,$bd);
 	@$row = mysql_fetch_array($rs);
 	return utf8_encode($row[0]);
 };

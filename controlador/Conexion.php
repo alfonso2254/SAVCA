@@ -6,6 +6,7 @@ $password = "";
 $database = 'SAVCA';
 
 $bd = mysqli_connect($server,$username,$password,$database);
+mysqli_select_db($bd, $database);
 
 if ($bd) {
   echo "Conectado correctamente.";

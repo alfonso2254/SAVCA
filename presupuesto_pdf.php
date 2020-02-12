@@ -1,5 +1,5 @@
 <?php
-require('../FPDF/fpdf.php');
+require('FPDF/fpdf.php');
 
 class PDF extends FPDF
 {
@@ -51,12 +51,12 @@ if(isset($_GET['t'])){ $t = $_GET['t']; }else{ $t = ""; }
 	
 #Establecemos los márgenes izquierda, arriba y derecha: 
 
-	require('../controlador/Conexion.php');
-	require_once('../funciones/funciones.php');
+	require('controlador/Conexion.php');
+	require_once('funciones/funciones.php');
 	$sql = "SELECT *
 	FROM presupuestos where id_presupuesto = '$id'  ";
-	$q_reporte = mysql_query($sql,$con);   
-	$reporte = mysql_fetch_array($q_reporte);
+	$q_reporte = mysqli_query($sql,$bd);   
+	$reporte = mysqli_fetch_array($q_reporte);
 	$cliente = utf8_decode(nombre_cliente($reporte["id_cliente"],'nombre'));
 	$rif = utf8_decode(campo_cliente($reporte["id_cliente"],'rif_cedula'));
 	$direccion = utf8_decode(campo_cliente($reporte["id_cliente"],'direccion'));
@@ -101,7 +101,7 @@ if(isset($_GET['t'])){ $t = $_GET['t']; }else{ $t = ""; }
     $this->SetFont('Arial','B',10);
     $this->Cell(200, 0,'RIF / CEDULA:  '.strtoupper($rif),45, 5,'L');
     $this->SetFont('Arial','',10);
-    $this->Cell(335, 0,'BRYAN QUINTANA',145, 5,'C');
+    $this->Cell(335, 0,'Prueba SAVCA',145, 5,'C');
     $this->Ln(6);
 	
     $this->SetFont('Arial','B',10);
@@ -133,8 +133,8 @@ function ImprovedTable($header, $data)
 {
 		{	
 	
-		require('../controlador/Conexion.php');
-		require_once('../funciones/funciones.php');
+		require('controlador/Conexion.php');
+		require_once('funciones/funciones.php');
 		
 		if(isset($_GET['id'])){ $id = $_GET['id']; }else{ $id = ""; }
 				
@@ -143,8 +143,8 @@ function ImprovedTable($header, $data)
 		FROM presupuestos 
 		where id_presupuesto = '$id' order by id_item asc ";
 		//echo $sql_detalle;
-		$q_reporte_detalle = mysql_query($sql_detalle,$con); 
-		$resultado = mysql_num_rows($q_reporte_detalle);  
+		$q_reporte_detalle = mysqli_query($sql_detalle,$bd); 
+		$resultado = mysqli_num_rows($q_reporte_detalle);  
 		//echo $resultado;
 		 
 		if($resultado > '0'){
@@ -155,7 +155,7 @@ function ImprovedTable($header, $data)
 		$w = array(105, 30, 28, 30);
     	$this->SetFont('Arial','',9);
 		
-		while($reporte_detalle = mysql_fetch_array($q_reporte_detalle)){
+		while($reporte_detalle = mysqli_fetch_array($q_reporte_detalle)){
 		
 		$this->Cell($w[0],5,strtoupper($reporte_detalle["desc_item"]),'0',0,'L');
 				
@@ -187,8 +187,8 @@ function ImprovedTablePrecio($header, $data)
 {
 		{	
 		
-		require('../controlador/Conexion.php');
-		require_once('../funciones/funciones.php');
+		require('controlador/Conexion.php');
+		require_once('funciones/funciones.php');
 		
 		if(isset($_GET['id'])){ $id = $_GET['id']; }else{ $id = ""; }
 		
@@ -196,9 +196,9 @@ function ImprovedTablePrecio($header, $data)
 		FROM presupuestos 
 		where id_presupuesto = '$id' ";
 		//echo $sql_detalle;
-		$q_reporte_detalle = mysql_query($sql_detalle,$con); 
-		$resultado = mysql_num_rows($q_reporte_detalle);  
-		$reporte_detalle = mysql_fetch_array($q_reporte_detalle);
+		$q_reporte_detalle = mysqli_query($sql_detalle,$bd); 
+		$resultado = mysqli_num_rows($q_reporte_detalle);  
+		$reporte_detalle = mysqli_fetch_array($q_reporte_detalle);
 		 
 		if($resultado > '0'){
 	
@@ -252,12 +252,12 @@ $pdf->SetFont('Arial','',8);
 $pdf->AliasNbPages();
 $pdf->AddPage();
 
-require('../controlador/Conexion.php');
+require('controlador/Conexion.php');
 $sql_detalle = "SELECT *
 FROM presupuestos 
 where id_presupuesto = '$id' order by id_item asc ";
-$q_reporte_detalle = mysql_query($sql_detalle,$con); 
-$resultado = mysql_num_rows($q_reporte_detalle);
+$q_reporte_detalle = mysqli_query($sql_detalle,$bd); 
+$resultado = mysqli_num_rows($q_reporte_detalle);
 if($resultado == '1'){
 $alto = 0;
 }else{  
