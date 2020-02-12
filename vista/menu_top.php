@@ -158,8 +158,8 @@
             <!-- Nav Item - User Information -->
             <li class="nav-item dropdown no-arrow">
               <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span style="color: white; font-size: 17px " class="mr-2 d-none d-lg-inline  small">Valerie Luna</span>
-                <img style="width: 50px; height: 50px" class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
+                <span style="color: white; font-size: 17px " class="mr-2 d-none d-lg-inline  small">SAVCA BETA</span>
+                <img style="width: 50px; height: 50px" class="img-profile rounded-circle" href="../imagenes/proceso.png">
               </a>
               <!-- Dropdown - User Information -->
               <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">

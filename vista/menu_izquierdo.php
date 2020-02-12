@@ -42,7 +42,7 @@
 
        <!-- Inicio Item Factura -->
       <li class="nav-item">
-       <a class=" p-2 nav-link" href="tables.html">
+       <a class=" p-2 nav-link" href="registro_facturacion.php">
          <i class="fas fa-fw fa-table"></i>
          <span>Factura</span>
        </a>
