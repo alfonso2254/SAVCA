@@ -25,7 +25,7 @@
        <!-- Inicio Item Productos -->
       <li class="p-0 nav-item">
         <a class="p-2 nav-link collapsed" href="#" data-toggle="collapse" data-target="#Productos" aria-expanded="true" aria-controls="collapseTwo">
-          <i class="fas fa-fw fa-cog"></i>
+          <i class="fas fa-truck-loading"></i>
           <span>Inventario</span>
         </a>
         <div id="Productos" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
