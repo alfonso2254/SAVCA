@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-04-11T22:23:38.718Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.92 Safari/537.36" etag="_222omMcEAz8pvu-UmtE" version="12.9.11" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2020-04-11T22:28:01.723Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.92 Safari/537.36" etag="bD37Sj-Q-x7zlmNibLTc" version="12.9.11" type="github" pages="2">
   <diagram name="Pagina principal" id="03018318-947c-dd8e-b7a3-06fadd420f32">
     <mxGraphModel dx="1732" dy="970" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
       <root>
@@ -146,7 +146,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="SBAMuZjEMkGbW2iJ8GrW" name="Despliegue del menu">
-    <mxGraphModel dx="1039" dy="1682" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1039" dy="1633" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="6skx8HG6hZLnZrbJxnGW-0" />
         <mxCell id="6skx8HG6hZLnZrbJxnGW-1" parent="6skx8HG6hZLnZrbJxnGW-0" />
